@@ -66,7 +66,7 @@ end
 # nil when no winner
 
 def winner(board)
-  if won?(board) == true
+  if over?(board) == true
     return board[won?(board)[0]]
   else
     return nil
